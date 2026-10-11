@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05050a"/>
+      <stop offset="50%" stop-color="#0d0018"/>
+      <stop offset="100%" stop-color="#05050a"/>
+    </linearGradient>
+
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95"/>
+    </radialGradient>
+
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b1"/>
+      <feGaussianBlur stdDeviation="7" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="scanlines" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1.5" fill="#000000" opacity="0.35"/>
+    </pattern>
+
+    <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse">
+      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#ff00a0" stroke-width="0.6" opacity="0.14"/>
+    </pattern>
+
+    <style>
+      .name {
+        font-family: 'Impact', 'Arial Black', 'Helvetica', sans-serif;
+        font-size: 78px;
+        font-weight: 900;
+        letter-spacing: 4px;
+      }
+      .subtitle {
+        font-family: 'Courier New', monospace;
+        font-size: 17px;
+        letter-spacing: 6px;
+        font-weight: 700;
+      }
+      .tag {
+        font-family: 'Courier New', monospace;
+        font-size: 13px;
+        letter-spacing: 3px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+
+  <!-- Base -->
+  <rect width="900" height="280" fill="url(#bgGrad)"/>
+  <rect width="900" height="280" fill="url(#grid)"/>
+
+  <!-- Floating ambient orbs -->
+  <circle cx="150" cy="140" r="90" fill="#b400ff" opacity="0.15">
+    <animate attributeName="cx" values="150;210;150" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.28;0.15" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="760" cy="130" r="110" fill="#ff00a0" opacity="0.12">
+    <animate attributeName="cx" values="760;700;760" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.12;0.24;0.12" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="270" r="120" fill="#00f0ff" opacity="0.10">
+    <animate attributeName="cy" values="270;245;270" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- HUD corner brackets -->
+  <g stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.75">
+    <path d="M 18 18 L 18 52 M 18 18 L 52 18"/>
+    <path d="M 882 18 L 882 52 M 882 18 L 848 18"/>
+    <path d="M 18 262 L 18 228 M 18 262 L 52 262"/>
+    <path d="M 882 262 L 882 228 M 882 262 L 848 262"/>
+  </g>
+
+  <!-- Top tag -->
+  <text class="tag" x="62" y="60" fill="#00f0ff" opacity="0.9">// SYSTEM.INIT :: DEV.PROFILE</text>
+
+  <!-- GLITCH NAME :: 3 layers -->
+  <text class="name" x="60" y="172" fill="#ff00a0" filter="url(#neonGlow)" opacity="0.9">
+    JOHN WAWERU
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; -3,2; 0,0; 2,-2; 0,0; -2,1; 0,0"
+      dur="2.4s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+  <text class="name" x="60" y="172" fill="#00f0ff" filter="url(#neonGlow)" opacity="0.9">
+    JOHN WAWERU
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 3,-2; 0,0; -2,2; 0,0; 2,-1; 0,0"
+      dur="2.4s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+  <text class="name" x="60" y="172" fill="#ffffff">
+    JOHN WAWERU
+    <animate attributeName="opacity"
+      values="1;1;1;0.45;1;1;1;0.65;1;1"
+      dur="2.4s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+
+  <!-- Subtitle with color-cycle + flicker -->
+  <text class="subtitle" x="62" y="215" filter="url(#neonGlow)">
+    DEVELOPER // WEB DESIGNER // NAIROBI
+    <animate attributeName="fill" values="#00f0ff;#ff00a0;#b400ff;#00f0ff" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0.35;1;1;0.7;1;1" dur="3s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+
+  <!-- Traveling scan bar -->
+  <rect x="0" y="0" width="900" height="3" fill="#00f0ff" opacity="0.5">
+    <animate attributeName="y" values="0;277;0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0.1;0.55" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Scanline overlay -->
+  <rect width="900" height="280" fill="url(#scanlines)"/>
+
+  <!-- Vignette -->
+  <rect width="900" height="280" fill="url(#vignette)"/>
+
+  <!-- Bottom tags -->
+  <text class="tag" x="62" y="260" fill="#ff00a0" opacity="0.8">STATUS :: ONLINE</text>
+  <text class="tag" x="838" y="260" fill="#b400ff" opacity="0.75" text-anchor="end">v2.0 // 2026</text>
+</svg>
