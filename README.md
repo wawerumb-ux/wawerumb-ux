@@ -143,7 +143,7 @@ const john: Developer = {
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=wawerumb-ux&bg_color=0a0a0f&color=00f0ff&line=ff00a0&point=ffffff&area=true&border_color=ff00a0" width="100%" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=wawerumb-ux&bg_color=0a0a0f&color=00f0ff&line=ff00a0&point=ffffff&area=true&border_color=ff00a0" width="100%" alt="Activity Graph" />
 </div>
 
 <img src="https://raw.githubusercontent.com/wawerumb-ux/wawerumb-ux/main/assets/divider.svg" width="100%" alt="divider"/>
@@ -151,7 +151,7 @@ const john: Developer = {
 ## 🩸 TROPHY.WALL
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=wawerumb-ux&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="Trophies" />
+  <img src="https://github-profile-trophy-one.vercel.app/?username=wawerumb-ux&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="Trophies" />
 </div>
 
 <img src="https://raw.githubusercontent.com/wawerumb-ux/wawerumb-ux/main/assets/divider.svg" width="100%" alt="divider"/>
