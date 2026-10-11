@@ -16,6 +16,7 @@
 <div align="center">
   <a href="https://github.com/wawerumb-ux"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=00f0ff&labelColor=0a0a0f" alt="GitHub" /></a>
   <a href="https://wawerumb-ux.github.io/Profile/"><img src="https://img.shields.io/badge/PORTFOLIO-ff00a0?style=for-the-badge&logo=googlechrome&logoColor=ffffff&labelColor=0a0a0f" alt="Portfolio" /></a>
+  <a href="mailto:wawerumb@gmail.com"><img src="https://img.shields.io/badge/EMAIL-b400ff?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=0a0a0f" alt="Email" /></a>
 </div>
 
 <br/>
