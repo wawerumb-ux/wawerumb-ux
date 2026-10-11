@@ -26,7 +26,8 @@
     </pattern>
 
     <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse">
-      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#ff00a0" stroke-width="0.6" opacity="0.14"/>
+      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#ff00a0"
+            stroke-width="0.6" opacity="0.14"/>
     </pattern>
 
     <style>
@@ -57,15 +58,20 @@
 
   <!-- Floating ambient orbs -->
   <circle cx="150" cy="140" r="90" fill="#b400ff" opacity="0.15">
-    <animate attributeName="cx" values="150;210;150" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.15;0.28;0.15" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="cx"
+      values="150;210;150" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+      values="0.15;0.28;0.15" dur="5s" repeatCount="indefinite"/>
   </circle>
   <circle cx="760" cy="130" r="110" fill="#ff00a0" opacity="0.12">
-    <animate attributeName="cx" values="760;700;760" dur="12s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.12;0.24;0.12" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="cx"
+      values="760;700;760" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+      values="0.12;0.24;0.12" dur="6s" repeatCount="indefinite"/>
   </circle>
   <circle cx="450" cy="270" r="120" fill="#00f0ff" opacity="0.10">
-    <animate attributeName="cy" values="270;245;270" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cy"
+      values="270;245;270" dur="8s" repeatCount="indefinite"/>
   </circle>
 
   <!-- HUD corner brackets -->
@@ -77,18 +83,21 @@
   </g>
 
   <!-- Top tag -->
-  <text class="tag" x="62" y="60" fill="#00f0ff" opacity="0.9">// SYSTEM.INIT :: DEV.PROFILE</text>
+  <text class="tag" x="62" y="60" fill="#00f0ff" opacity="0.9"
+  >// SYSTEM.INIT :: DEV.PROFILE</text>
 
   <!-- GLITCH NAME :: 3 layers -->
   <text class="name" x="60" y="172" fill="#ff00a0" filter="url(#neonGlow)" opacity="0.9">
     JOHN WAWERU
-    <animateTransform attributeName="transform" type="translate"
+    <animateTransform
+      attributeName="transform" type="translate"
       values="0,0; -3,2; 0,0; 2,-2; 0,0; -2,1; 0,0"
       dur="2.4s" repeatCount="indefinite" calcMode="discrete"/>
   </text>
   <text class="name" x="60" y="172" fill="#00f0ff" filter="url(#neonGlow)" opacity="0.9">
     JOHN WAWERU
-    <animateTransform attributeName="transform" type="translate"
+    <animateTransform
+      attributeName="transform" type="translate"
       values="0,0; 3,-2; 0,0; -2,2; 0,0; 2,-1; 0,0"
       dur="2.4s" repeatCount="indefinite" calcMode="discrete"/>
   </text>
@@ -102,14 +111,20 @@
   <!-- Subtitle with color-cycle + flicker -->
   <text class="subtitle" x="62" y="215" filter="url(#neonGlow)">
     DEVELOPER // WEB DESIGNER // NAIROBI
-    <animate attributeName="fill" values="#00f0ff;#ff00a0;#b400ff;#00f0ff" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;1;0.35;1;1;0.7;1;1" dur="3s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="fill"
+      values="#00f0ff;#ff00a0;#b400ff;#00f0ff"
+      dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+      values="1;1;0.35;1;1;0.7;1;1"
+      dur="3s" repeatCount="indefinite" calcMode="discrete"/>
   </text>
 
   <!-- Traveling scan bar -->
   <rect x="0" y="0" width="900" height="3" fill="#00f0ff" opacity="0.5">
-    <animate attributeName="y" values="0;277;0" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.55;0.1;0.55" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="y"
+      values="0;277;0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+      values="0.55;0.1;0.55" dur="6s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Scanline overlay -->
@@ -120,5 +135,6 @@
 
   <!-- Bottom tags -->
   <text class="tag" x="62" y="260" fill="#ff00a0" opacity="0.8">STATUS :: ONLINE</text>
-  <text class="tag" x="838" y="260" fill="#b400ff" opacity="0.75" text-anchor="end">v2.0 // 2026</text>
+  <text class="tag" x="838" y="260" fill="#b400ff" opacity="0.75"
+        text-anchor="end">v2.0 // 2026</text>
 </svg>
